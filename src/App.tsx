@@ -1,12 +1,10 @@
 import './App.css'
+import HeroSection from './components/HeroSection'
 
 function App() {
-
   return (
     <>
-      <div className="bg-blue-500 text-white p-4">
-        Este es un elemento con clases de Tailwind CSS.
-      </div>
+      <HeroSection />
     </>
   )
 }
