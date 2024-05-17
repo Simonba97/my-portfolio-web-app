@@ -2,7 +2,7 @@ import CodeFigure from "./common/CodeFigure"
 import logoSimon from "../assets/logoSimon.png";
 const HeroSection = () => {
     return (
-        <div className="h-screen flex flex-col items-center sm:items-start justify-center px-8">
+        <section id="hero" className="h-screen flex flex-col items-center sm:items-start justify-center px-8">
             <div className="pl-3 border-l-[1px] border-l-gray-400 space-y-5">
                 <CodeFigure />
                 {/* Main information */}
@@ -15,7 +15,7 @@ const HeroSection = () => {
                 </div>
                 <CodeFigure />
             </div>
-        </div>
+        </section>
     )
 }
 
