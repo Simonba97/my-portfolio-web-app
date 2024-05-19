@@ -5,7 +5,7 @@ const AboutSection = () => {
     const bornDate = new Date('1997-01-31');
     const age = currentDate.getFullYear() - bornDate.getFullYear();
     return (
-        <section id="about" className="flex flex-col items-start justify-center p-8">
+        <section id="about" className="h-screen flex flex-col items-start justify-center p-8">
             {/* About me Information */}
             <div className="">
                 <TitleSection title="Acerca de mí" emoji={"🧑🏻‍💻"} />
