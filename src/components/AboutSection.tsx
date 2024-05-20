@@ -8,10 +8,13 @@ const AboutSection = () => {
         <section id="about" className="h-screen flex flex-col items-start justify-center p-8">
             {/* About me Information */}
             <div className="">
-                <TitleSection title="Acerca de mí" emoji={"🧑🏻‍💻"} />
-                {/* <hr className="h-[2px] w-72 m-auto border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-600 to-transparent">
-                </hr> */}
-                <p className="flex flex-col font-light text-start">
+                <TitleSection
+                    title="Acerca de mí"
+                    gradientUnderline={'bg-gradient-to-r from-indigo-400 to-cyan-400'}
+                    emoji={"🧑🏻‍💻"}
+                />
+
+                <p className="flex flex-col font-mono text-start">
                     <span className="text-xl font-semibold pb-2">Hola, soy Simón Bustamante Alzate.</span>
                     <span>
                         Tengo {age} años y soy <span className="font-medium">Ingeniero de Sistemas</span>. Sin embargo, <span className="font-medium">desarrollador de software por pasión</span>. Con más de ocho años de experiencia en la industria, he cultivado un profundo amor por el <span className="font-medium">Frontend</span>, aunque también tengo habilidades en el Backend.

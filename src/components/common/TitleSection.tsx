@@ -1,11 +1,11 @@
 import React from "react"
 
-const TitleSection = ({ title, emoji }: { title: string, emoji?: string }) => {
+const TitleSection = ({ title, gradientUnderline, emoji = '🤔' }: { title: string, gradientUnderline: string, emoji?: string, }) => {
     return (
         <React.Fragment>
             <div className="flex">
                 <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-200">
-                    <span className="underline underline-offset-3 decoration-8 decoration-blue-600">
+                    <span className={`${gradientUnderline} bg-[length:100%_6px] bg-no-repeat bg-bottom`}>
                         {title}
                     </span>
                     &nbsp;

@@ -3,7 +3,7 @@ const FooterSection = () => {
         <footer
             className="flex flex-col items-center text-center text-surface">
             <div className="p-3">
-                <div className="mb-1 flex justify-center space-x-2">
+                <div className="-mb-2 flex justify-center space-x-2">
                     <a
                         href="https://www.instagram.com/simonba97/"
                         type="button"
@@ -64,6 +64,9 @@ const FooterSection = () => {
                             </svg>
                         </span>
                     </a>
+                </div>
+                <div>
+                    <span className="font-mono text-xs text-gray-200">Copyright {new Date().getFullYear()} Simón Bustamante Alzate</span>
                 </div>
             </div>
         </footer>

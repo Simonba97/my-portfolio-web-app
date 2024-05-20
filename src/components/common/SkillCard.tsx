@@ -7,12 +7,14 @@ const SkillCard = ({ titleSkill, iconContent }: { titleSkill: string, iconConten
                     <h2 className="text-xl italic font-semibold text-gray-200">{titleSkill}</h2>
                 </div>
             </div> */}
-            <div className="m-[6px] min-w-full sm:min-w-52 h-14 bg-gray-800 flex justify-between py-1 px-4 items-center border-b-2 border-blue-300" >
-                <div className="">
-                    {iconContent}
-                </div>
-                <div>
-                    <span className="font-light text-base tracking-wider">{titleSkill}</span>
+            <div className="m-[6px] min-w-full sm:min-w-52 h-14 bg-gray-700" >
+                <div className="w-full h-full py-1 px-4 border-b-4 border-blue-300 flex justify-between items-center">
+                    <div className="">
+                        {iconContent}
+                    </div>
+                    <div className="">
+                        <span className="tracking-wide font-mono">{titleSkill}</span>
+                    </div>
                 </div>
             </div>
         </>
