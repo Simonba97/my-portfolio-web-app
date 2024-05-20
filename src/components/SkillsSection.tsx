@@ -7,7 +7,7 @@ const SkillsSection = () => {
             {/* About me Information */}
             <TitleSection
                 title="Skills"
-                gradientUnderline={'bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500'}
+                gradientUnderline={'bg-gradient-to-r from-cyan-500 to-blue-500'}
                 emoji={"🔥"}
             />
             <div className="flex flex-wrap">

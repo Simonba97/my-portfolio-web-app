@@ -10,7 +10,7 @@ const HeroSection = () => {
                     <img src={logoSimon} alt="memojiSimon" className="w-28" />
                     <div id="mainInformation" className="flex flex-col items-start justify-center space-y-[-5px]">
                         <h1 id="myName" className="text-4xl font-bold text-gray-200">Soy Simón</h1>
-                        <span id="myJob" className="text-lg tracking-widest text-gray-400 font-mono">Frontend Developer</span>
+                        <span id="myJob" className="text-base sm:text-lg tracking-widest text-gray-400 font-mono">Frontend Developer</span>
                     </div>
                 </div>
                 <CodeFigure />

@@ -14,7 +14,7 @@ const AboutSection = () => {
                     emoji={"🧑🏻‍💻"}
                 />
 
-                <p className="flex flex-col font-mono text-start">
+                <p className="flex flex-col font-mono text-start -tracking-wide sm:tracking-normal">
                     <span className="text-xl font-semibold pb-2">Hola, soy Simón Bustamante Alzate.</span>
                     <span>
                         Tengo {age} años y soy <span className="font-medium">Ingeniero de Sistemas</span>. Sin embargo, <span className="font-medium">desarrollador de software por pasión</span>. Con más de ocho años de experiencia en la industria, he cultivado un profundo amor por el <span className="font-medium">Frontend</span>, aunque también tengo habilidades en el Backend.
