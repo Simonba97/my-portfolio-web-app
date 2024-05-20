@@ -1,5 +1,6 @@
 import TitleSection from "./common/TitleSection"
 import PVHome from "../assets/Projects/PortalVerdolaga/PVHome.png";
+import PVMatchMoreDetail from "../assets/Projects/PortalVerdolaga/PVMatchMoreDetail.png";
 
 const ProjectsSection = () => {
     return (
@@ -12,7 +13,7 @@ const ProjectsSection = () => {
                     emoji={"🚀"}
                 />
 
-                <div id="contentProjects" className="flex flex-col sm:flex-row items-center bg-gray-700 rounded-md font-mono">
+                <div id="contentProjects" className="flex flex-col sm:flex-row items-center bg-gray-700 sm:rounded-md max-sm:rounded-t-md font-mono">
                     <div className="p-4 sm:p-0 sm:w-1/2 flex flex-col sm:flex-1 items-center justify-center space-y-2">
                         <div id="mainInformationProject">
                             <h5 className="text-2xl sm:text-3xl font-bold text-gray-200 -mb-2">Portal Verdolaga</h5>
@@ -37,12 +38,13 @@ const ProjectsSection = () => {
                             <a href="https://portalverdolaga.com/?from=portfolio" target="_blank"><span className="font-light text-base underline italic">{'Ver proyecto'}</span> <span>{'👉🏻'}</span></a>
                         </div>
                     </div>
-                    <div className="p-2 sm:p-0 sm:w-1/2 flex justify-center">
+                    <div className="p-2 sm:p-0 sm:w-1/2 flex justify-center -space-x-5">
                         <img className="w-1/2 -rotate-12 hover:rotate-0 duration-300" src={PVHome} alt="PVHome" />
+                        <img className="w-1/2 rotate-12 hover:rotate-0 duration-300" src={PVMatchMoreDetail} alt="PVHome" />
                     </div>
                 </div>
-                <div className="sm:hidden mt-4">
-                    <a href="https://portalverdolaga.com/?from=portfolio" target="_blank"><span className="font-light text-base underline italic">{'Ver proyecto'}</span> <span>{'👉🏻'}</span></a>
+                <div className="sm:hidden bg-gray-300 rounded-b-md py-1 text-gray-700">
+                    <a href="https://portalverdolaga.com/?from=portfolio" target="_blank"><span className="font-bold font-mono uppercase tracking-tighter">{'Ver proyecto'}</span> <span>{'👉🏻'}</span></a>
                 </div>
             </div>
         </section>
