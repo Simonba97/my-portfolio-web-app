@@ -7,7 +7,7 @@ const SkillCard = ({ titleSkill, iconContent }: { titleSkill: string, iconConten
                     <h2 className="text-xl italic font-semibold text-gray-200">{titleSkill}</h2>
                 </div>
             </div> */}
-            <div className="m-[6px] min-w-full sm:min-w-52 h-14 bg-gray-700" >
+            <div className="m-[6px] min-w-full sm:min-w-52 h-11 sm:h-14 bg-gray-700" >
                 <div className="w-full h-full py-1 px-4 border-b-4 border-blue-300 flex justify-between items-center">
                     <div className="">
                         {iconContent}

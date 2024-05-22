@@ -1,10 +1,11 @@
 import TitleSection from "./common/TitleSection"
 import PVHome from "../assets/Projects/PortalVerdolaga/PVHome.png";
 import PVMatchMoreDetail from "../assets/Projects/PortalVerdolaga/PVMatchMoreDetail.png";
+import { motion } from 'framer-motion'
 
 const ProjectsSection = () => {
     return (
-        <section id="projects" className="h-screen flex flex-col items-start justify-center p-8">
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="projects" className="h-screen flex flex-col items-start justify-center p-8">
             {/* About me Information */}
             <div className="w-full">
                 <TitleSection
@@ -39,7 +40,7 @@ const ProjectsSection = () => {
                         </div>
                     </div>
                     <div className="p-2 sm:p-0 sm:w-1/2 flex justify-center -space-x-5">
-                        <img className="w-1/2 -rotate-12 hover:rotate-0 duration-300" src={PVHome} alt="PVHome" />
+                        <img className="w-1/2 -rotate-12 hover:rotate-0 duration-300 z-10" src={PVHome} alt="PVHome" />
                         <img className="w-1/2 rotate-12 hover:rotate-0 duration-300" src={PVMatchMoreDetail} alt="PVHome" />
                     </div>
                 </div>
@@ -47,7 +48,7 @@ const ProjectsSection = () => {
                     <a href="https://portalverdolaga.com/?from=portfolio" target="_blank"><span className="font-bold font-mono uppercase tracking-tighter">{'Ver proyecto'}</span> <span>{'👉🏻'}</span></a>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

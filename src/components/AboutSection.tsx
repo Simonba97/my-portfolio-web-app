@@ -1,11 +1,12 @@
 import TitleSection from "./common/TitleSection";
+import { motion } from 'framer-motion';
 
 const AboutSection = () => {
     const currentDate = new Date();
     const bornDate = new Date('1997-01-31');
     const age = currentDate.getFullYear() - bornDate.getFullYear();
     return (
-        <section id="about" className="h-screen flex flex-col items-start justify-center p-8">
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="about" className="h-screen flex flex-col items-start justify-center p-8">
             {/* About me Information */}
             <div className="">
                 <TitleSection
@@ -27,7 +28,7 @@ const AboutSection = () => {
                     </span>
                 </p>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
