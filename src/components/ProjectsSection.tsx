@@ -1,8 +1,8 @@
 import TitleSection from "./common/TitleSection"
-import PVHome from "../assets/Projects/PortalVerdolaga/PVHome.png";
-import PVMatchMoreDetail from "../assets/Projects/PortalVerdolaga/PVMatchMoreDetail.png";
-import UCHome from "../assets/Projects/UberClone/UCHome.png";
-import UCRide from "../assets/Projects/UberClone/UCRide.png";
+import PVHome from "../assets/Projects/PortalVerdolaga/PVHome-min.png";
+import PVMatchMoreDetail from "../assets/Projects/PortalVerdolaga/PVMatchMoreDetail-min.png";
+import UCHome from "../assets/Projects/UberClone/UCHome-min.png";
+import UCRide from "../assets/Projects/UberClone/UCRide-min.png";
 import { motion } from 'framer-motion'
 import Slider from "./Slider";
 import ProjectCard from "./common/ProjectCard";
