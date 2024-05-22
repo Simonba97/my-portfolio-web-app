@@ -6,7 +6,7 @@ const AboutSection = () => {
     const bornDate = new Date('1997-01-31');
     const age = currentDate.getFullYear() - bornDate.getFullYear();
     return (
-        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="about" className="h-screen flex flex-col items-start justify-center p-8">
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="about" className="h-screen flex flex-col items-start justify-center px-6 sm:px-8">
             {/* About me Information */}
             <div className="">
                 <TitleSection
@@ -15,7 +15,7 @@ const AboutSection = () => {
                     emoji={"🧑🏻‍💻"}
                 />
 
-                <p className="flex flex-col font-mono text-start -tracking-wide sm:tracking-normal">
+                <p className="flex flex-col font-mono text-start -tracking-widest sm:tracking-normal">
                     <span className="text-xl font-semibold pb-2">Hola, soy Simón Bustamante Alzate.</span>
                     <span>
                         Tengo {age} años y soy <span className="font-medium">Ingeniero de Sistemas</span>. Sin embargo, <span className="font-medium">desarrollador de software por pasión</span>. Con más de ocho años de experiencia en la industria, he cultivado un profundo amor por el <span className="font-medium">Frontend</span>, aunque también tengo habilidades en el Backend.

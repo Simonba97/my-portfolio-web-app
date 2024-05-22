@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const SkillsSection = () => {
     return (
-        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="skills" className="h-screen flex flex-col items-start justify-center p-8">
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="skills" className="h-screen flex flex-col items-start justify-center px-6 sm:px-8">
             {/* About me Information */}
             <TitleSection
                 title="Soft Skills"

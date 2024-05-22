@@ -1,11 +1,15 @@
 import TitleSection from "./common/TitleSection"
 import PVHome from "../assets/Projects/PortalVerdolaga/PVHome.png";
 import PVMatchMoreDetail from "../assets/Projects/PortalVerdolaga/PVMatchMoreDetail.png";
+import UCHome from "../assets/Projects/UberClone/UCHome.png";
+import UCRide from "../assets/Projects/UberClone/UCRide.png";
 import { motion } from 'framer-motion'
+import Slider from "./Slider";
+import ProjectCard from "./common/ProjectCard";
 
 const ProjectsSection = () => {
     return (
-        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="projects" className="h-screen flex flex-col items-start justify-center p-8">
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="projects" className="h-screen flex flex-col items-start justify-center px-6 sm:px-8">
             {/* About me Information */}
             <div className="w-full">
                 <TitleSection
@@ -14,39 +18,44 @@ const ProjectsSection = () => {
                     emoji={"🚀"}
                 />
 
-                <div id="contentProjects" className="flex flex-col sm:flex-row items-center bg-gray-700 sm:rounded-md max-sm:rounded-t-md font-mono">
-                    <div className="p-4 sm:p-0 sm:w-1/2 flex flex-col sm:flex-1 items-center justify-center space-y-2">
-                        <div id="mainInformationProject">
-                            <h5 className="text-2xl sm:text-3xl font-bold text-gray-200 -mb-2">Portal Verdolaga</h5>
-                            <span className="text-sm sm:text-xs text-gray-400 ">WebApp</span>
-                        </div>
-                        <div id="summaryProject">
-                            <p className="flex flex-col text-start text-sm -tracking-wider sm:tracking-normal">
-                                <span> Sitio Web deportivo dedicado a Atl. Nacional 🇳🇬</span>
-                                <span> ⚽️ ¿Próximo partido? ¡Victoria segura!</span>
-                                <span> ⬅️ ¿Último partido? Obviamente una victoria</span>
-                                <span> 📆 Calendario y más...</span>
-                            </p>
-                        </div>
-                        <div id="skillUsed">
-                            <p className="flex mt-2">
-                                <span className="bg-yellow-900 text-yellow-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-yellow-400">TypeScript</span>
-                                <span className="bg-cyan-900 text-cyan-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-cyan-400">Tailwind CSS</span>
-                                <span className="bg-blue-900 text-blue-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-blue-400">React JS</span>
-                            </p>
-                        </div>
-                        <div className="max-sm:hidden mt-4">
-                            <a href="https://portalverdolaga.com/?from=portfolio" target="_blank"><span className="font-light text-base underline italic">{'Ver proyecto'}</span> <span>{'👉🏻'}</span></a>
-                        </div>
-                    </div>
-                    <div className="p-2 sm:p-0 sm:w-1/2 flex justify-center -space-x-5">
-                        <img className="w-1/2 -rotate-12 hover:rotate-0 duration-300 z-10" src={PVHome} alt="PVHome" />
-                        <img className="w-1/2 rotate-12 hover:rotate-0 duration-300" src={PVMatchMoreDetail} alt="PVHome" />
-                    </div>
-                </div>
-                <div className="sm:hidden bg-gray-300 rounded-b-md py-1 text-gray-700">
-                    <a href="https://portalverdolaga.com/?from=portfolio" target="_blank"><span className="font-bold font-mono uppercase tracking-tighter">{'Ver proyecto'}</span> <span>{'👉🏻'}</span></a>
-                </div>
+                {/* Proyecto #1 */}
+
+                <Slider
+                    reactNodesContents={
+                        [
+                            /* Project #1 */
+                            <ProjectCard
+                                keyProject="portalVerdolaga"
+                                title="Portal Verdolaga"
+                                type="WebApp"
+                                summary={"Sitio web para resultados e información en vivo sobre Atlético Nacional, utilizando APIs pagas para obtener datos actualizados. Incluye módulos de calendarios, resultados, próximos partidos, estadísticas y más."}
+                                tags={[
+                                    <span className="bg-yellow-900 text-yellow-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-yellow-400">TypeScript</span>,
+                                    <span className="bg-cyan-900 text-cyan-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-cyan-400">Tailwind CSS</span>,
+                                    <span className="bg-blue-900 text-blue-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-blue-400">React JS</span>
+                                ]}
+                                linkProject="https://portalverdolaga.com"
+                                images={[PVHome, PVMatchMoreDetail]}
+                            />,
+
+                            /* Project #2 */
+                            <ProjectCard
+                                keyProject="uberClone"
+                                title="Uber Clone"
+                                type="APP"
+                                summary="Creación de una aplicación similar a Uber, replicando su interfaz y utilizando APIs para calcular distancias y costos de viajes. Incluye una representación visual del recorrido desde el punto de origen hasta el destino 📍"
+                                tags={[
+                                    <span className="bg-yellow-900 text-yellow-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-yellow-400">TypeScript</span>,
+                                    <span className="bg-cyan-900 text-cyan-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-cyan-400">Tailwind CSS</span>,
+                                    <span className="bg-blue-900 text-blue-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-blue-400">React Native</span>,
+                                    <span className="bg-gray-900 text-gray-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-gray-400">Expo CLI</span>
+                                ]}
+                                images={[UCHome, UCRide]}
+                            />
+                        ]
+                    }
+                />
+
             </div>
         </motion.section>
     )
