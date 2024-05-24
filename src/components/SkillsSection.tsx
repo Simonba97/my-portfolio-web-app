@@ -4,14 +4,14 @@ import { motion } from 'framer-motion'
 
 const SkillsSection = () => {
     return (
-        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="skills" className="h-screen flex flex-col items-start justify-center px-6 sm:px-8">
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} id="skills" className="flex flex-col items-start justify-center px-3 sm:px-8 mb-20">
             {/* About me Information */}
             <TitleSection
                 title="Soft Skills"
                 gradientUnderline={'bg-gradient-to-r from-cyan-500 to-blue-500'}
                 emoji={"🔥"}
             />
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-center">
                 <SkillCard
                     titleSkill="HTML"
                     iconContent={

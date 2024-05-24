@@ -6,7 +6,7 @@ const AboutSection = () => {
     const bornDate = new Date('1997-01-31');
     const age = currentDate.getFullYear() - bornDate.getFullYear();
     return (
-        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} id="about" className="h-screen flex flex-col items-start justify-center px-6 sm:px-8">
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} id="about" className="flex flex-col items-start justify-center px-3 sm:px-8 mb-20">
             {/* About me Information */}
             <div className="">
                 <TitleSection
@@ -14,18 +14,8 @@ const AboutSection = () => {
                     gradientUnderline={'bg-gradient-to-r from-indigo-400 to-cyan-400'}
                     emoji={"🧑🏻‍💻"}
                 />
-
-                <p className="flex flex-col font-mono text-start -tracking-widest sm:tracking-normal">
-                    <span className="text-xl font-semibold pb-2">Hola, soy Simón Bustamante Alzate.</span>
-                    <span>
-                        Tengo {age} años y soy <span className="font-medium">Ingeniero de Sistemas</span>. Sin embargo, <span className="font-medium">desarrollador de software por pasión</span>. Con más de ocho años de experiencia en la industria, he cultivado un profundo amor por el <span className="font-medium">Frontend</span>, aunque también tengo habilidades en el Backend.
-                    </span>
-                    <span>
-                        Constantemente persigo la innovación y me emociona explorar nuevos territorios y enfrentar desafíos. La creatividad podría ser mi brújula, y en cada proyecto me esfuerzo por dejar una marca de innovación. Además de dedicarme al mundo digital, disfruto del fútbol, los libros, el póker entre amigos y otras actividades fuera de la pantalla.
-                    </span>
-                    <span>
-                        A lo largo de mi trayectoria, he trabajado en numerosos proyectos personales que, aunque no siempre ven la luz, son un testimonio de mi constante deseo de explorar y crear algo nuevo. Siendo así soy el fiel reflejo de aquel niño que no veía la hora de explorar algo nuevo en su computadora.
-                    </span>
+                <p className="text-lg text-start font-light">
+                    Soy <strong>Simón Bustamante Alzate</strong>, <strong>Ingeniero de Sistemas</strong> con más de <strong>ocho años de experiencia</strong> en la industria. Aunque tengo habilidades en <strong>Backend</strong>, mi verdadera pasión reside en el <strong>Frontend</strong>. La creatividad es mi brújula. Fuera del ámbito profesional, disfruto del <>fútbol</>, la <>lectura</>, el <>póker con amigos</> y otras actividades alejadas de la pantalla. A lo largo de mi carrera, he trabajado en numerosos <>proyectos personales</> que, aunque no siempre ven la luz, reflejan mi constante deseo de <>explorar y crear nuevas ideas</>.
                 </p>
             </div>
         </motion.section>

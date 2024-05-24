@@ -4,9 +4,8 @@ import { motion } from 'framer-motion';
 
 const HeroSection = () => {
     return (
-        <section id="hero" className="h-screen flex flex-col items-center sm:items-start justify-center px-6 sm:px-8">
-            <div
-                className="pl-3 border-l-[1px] border-l-gray-400 space-y-5">
+        <section id="hero" className="h-screen flex flex-col items-center sm:items-start justify-center px-3 sm:px-8">
+            <div className="w-full pl-4 border-l-[1px] border-l-gray-400 space-y-7">
                 <CodeFigure />
                 {/* Main information */}
                 <motion.div

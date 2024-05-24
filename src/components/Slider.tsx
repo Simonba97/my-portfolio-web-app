@@ -11,13 +11,15 @@ const Slider = ({ reactNodesContents }: { reactNodesContents: React.ReactNode[] 
 
     return (
         <>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} exit={{ opacity: 0 }} key={currentIndex} className="slider-item">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} exit={{ opacity: 0 }} key={currentIndex} className="flex justify-center">
                 {reactNodesContents[currentIndex]}
             </motion.div>
             <br />
-            <button className="slider-button next" onClick={nextSlide}>
-                Siguiente proyecto
-            </button>
+            <div>
+                <button className="md:bg-gray-300 md:text-gray-700 px-3 py-2 text-sm rounded-md font-medium tracking-wider" onClick={nextSlide}>
+                    Siguiente ➡️
+                </button>
+            </div>
         </>
     );
 }

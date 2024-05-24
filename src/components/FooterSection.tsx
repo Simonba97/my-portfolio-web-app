@@ -66,7 +66,7 @@ const FooterSection = () => {
                     </a>
                 </div>
                 <div>
-                    <span className="font-mono text-xs text-gray-200">Copyright {new Date().getFullYear()} Simón Bustamante Alzate</span>
+                    <span className="font-mono text-xs text-gray-200">Copyright {new Date().getFullYear()} - Hecho con ❤️‍🩹 por Simón</span>
                 </div>
             </div>
         </footer>
