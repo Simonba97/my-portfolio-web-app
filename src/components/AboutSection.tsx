@@ -2,9 +2,6 @@ import TitleSection from "./common/TitleSection";
 import { motion } from 'framer-motion';
 
 const AboutSection = () => {
-    const currentDate = new Date();
-    const bornDate = new Date('1997-01-31');
-    const age = currentDate.getFullYear() - bornDate.getFullYear();
     return (
         <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} id="about" className="flex flex-col items-start justify-center px-3 sm:px-8 mb-20">
             {/* About me Information */}
