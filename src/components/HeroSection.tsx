@@ -1,5 +1,5 @@
 import CodeFigure from "./common/CodeFigure"
-import logoSimon from "../assets/logoSimon-min.png";
+import logoSimon from "../assets/metaTags.jpg";
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
