@@ -1,8 +1,4 @@
 import TitleSection from "./common/TitleSection"
-import PVHome from "../assets/Projects/PortalVerdolaga/PVHome-min.png";
-import PVMatchMoreDetail from "../assets/Projects/PortalVerdolaga/PVMatchMoreDetail-min.png";
-import UCHome from "../assets/Projects/UberClone/UCHome-min.png";
-import UCRide from "../assets/Projects/UberClone/UCRide-min.png";
 import { motion } from 'framer-motion'
 import Slider from "./Slider";
 import ProjectCard from "./common/ProjectCard";
@@ -33,7 +29,7 @@ const ProjectsSection = () => {
                                     <span className="bg-blue-900 text-blue-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-blue-600">React JS</span>
                                 ]}
                                 linkProject="https://portalverdolaga.com"
-                                images={[PVHome, PVMatchMoreDetail]}
+                                images={['/images/Projects/PortalVerdolaga/PVHome-min.png', '/images/Projects/PortalVerdolaga/PVMatchMoreDetail-min.png']}
                             />,
 
                             /* Project #2 */
@@ -47,7 +43,7 @@ const ProjectsSection = () => {
                                     <span className="bg-cyan-900 text-cyan-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-cyan-600">Tailwind CSS</span>,
                                     <span className="bg-blue-900 text-blue-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded border border-blue-600">React Native</span>
                                 ]}
-                                images={[UCHome, UCRide]}
+                                images={['/images/Projects/UberClone/UCHome-min.png', '/images/Projects/UberClone/UCRide-min.png']}
                             />
                         ]
                     }
