@@ -12,7 +12,7 @@ interface IProject {
 
 const ProjectCard: React.FC<IProject> = ({ keyProject, title, type, summary, tags, linkProject, images }) => {
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} className='w-11/12 '>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} className='w-11/12'>
             <div id={`contentProject_${keyProject}`} className="flex flex-col md:flex-row items-center bg-gray-700 md:rounded-xl max-md:rounded-t-md">
                 <div className="p-4 md:p-3 lg:p-6 md:w-1/2 flex flex-col md:flex-1 items-center justify-center space-y-2">
                     <div id="mainInformationProject">
@@ -36,8 +36,8 @@ const ProjectCard: React.FC<IProject> = ({ keyProject, title, type, summary, tag
                     }
                 </div>
                 <div className="p-2 md:p-0 md:w-1/2 flex justify-center -space-x-5">
-                    <img className="w-[45%] md:w-1/2 -rotate-12 hover:rotate-0 duration-300 z-10" src={images[0]} alt="PVHome" />
-                    <img className="w-[45%] md:w-1/2 rotate-12 hover:rotate-0 duration-300" src={images[1]} alt="PVHome" />
+                    <img className="w-[45%] aspect-auto md:w-1/2 -rotate-12 hover:rotate-0 duration-300 z-10" src={images[0]} alt="PVHome" loading="lazy" />
+                    <img className="w-[45%] aspect-auto md:w-1/2 rotate-12 hover:rotate-0 duration-300" src={images[1]} alt="PVHome" loading="lazy" />
                 </div>
             </div >
             {linkProject &&
