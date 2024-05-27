@@ -19,7 +19,7 @@ const FooterSection = () => {
                         </span>
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/sim%C3%B3n-bustamante-alzate-988140194/"
+                        href="https://www.linkedin.com/in/simonba97"
                         type="button"
                         className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out  focus:outline-none focus:ring-0 dark:text-white"
                         data-twe-ripple-init>
