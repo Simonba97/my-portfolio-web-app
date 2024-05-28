@@ -12,7 +12,7 @@ const AboutSection = () => {
                     emoji={"🧑🏻‍💻"}
                 />
                 <p className="text-lg text-start font-light">
-                    Soy <strong>Simón Bustamante Alzate</strong>, <strong>Ingeniero de Sistemas</strong> con más de <strong>ocho años de experiencia</strong> en la industria. Aunque tengo habilidades en <strong>Backend</strong>, mi verdadera pasión reside en el <strong>Frontend</strong>. La creatividad es mi brújula. Fuera del ámbito profesional, disfruto del <>fútbol</>, la <>lectura</>, el <>póker con amigos</> y otras actividades alejadas de la pantalla. A lo largo de mi carrera, he trabajado en numerosos <>proyectos personales</> que, aunque no siempre ven la luz, reflejan mi constante deseo de <>explorar y crear nuevas ideas</>.
+                    Soy <strong>Simón Bustamante Alzate</strong>, <strong>Ingeniero de Sistemas</strong> con más de <strong>ocho años de experiencia</strong> en la industria. Aunque tengo habilidades en <strong>Backend</strong>, mi verdadera pasión reside en el <strong>Frontend</strong>. La creatividad es mi brújula. Fuera del ámbito profesional, disfruto del fútbol, la lectura, el póker con amigos y otras actividades alejadas de la pantalla. A lo largo de mi carrera, he trabajado en numerosos proyectos personales que, aunque no siempre ven la luz, reflejan mi constante deseo de explorar y crear nuevas ideas. <a href="/curriculum.pdf" target="_blank" className="underline decoration-wavy underline-offset-4 italic">Ver mi currículum</a>.
                 </p>
             </div>
         </motion.section>
